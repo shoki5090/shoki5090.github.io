@@ -1,0 +1,176 @@
+.container {
+  display: grid;
+
+  grid-template-areas:
+    "dp bio bio"
+    "dp bio bio"
+    "nav checklist checklist"
+    "nav education education"
+    "footer footer footer";
+
+  grid-template-columns: 300px 1fr 200px;
+  grid-template-rows: auto;
+  grid-gap: 0;
+
+  height: 100vh;
+
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "dp nav nav"
+      "bio bio bio"
+      "checklist checklist checklist"
+      "side side side"
+      "education education education"
+      "footer footer footer";
+
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  nav {
+    margin: 0;
+  }
+}
+
+div {
+  padding: 10px 10px 10px 10px;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+@media (max-width: 768px) {
+  .profile-photo, .personal-bio{
+    background-color: #3fb0ac;
+  }
+  .profile-photo {
+    grid-area: dp;
+    display: block;
+    top:auto;
+    bottom:auto;
+   
+
+  }
+
+  .personal-bio {
+    grid-area: nav;
+    object-fit: fill;
+    color: #f3eada;
+    
+
+  }
+
+
+}
+
+@media (min-width: 769px) {
+  .profile-photo{
+    grid-area: dp;
+    top: 0;
+    object-fit: cover;
+    }
+  .personal-bio{
+    grid-area: nav;
+    top:auto;
+    bottom:0;
+    color: #f3eada;
+    text-align:center;
+  }
+  .profile-photo, .personal-bio {
+    /* background-image: url("../images/ice-cream-background.png"); */
+    background-color: #3fb0ac;
+    position: fixed;
+
+    bottom: 0;
+    height: auto;
+    width: 18em;
+    padding:0;
+    overflow: scroll;
+    background-size: cover;
+  }
+
+}
+
+.bio {
+  font-size: 24px;
+  grid-area: bio;
+}
+
+.checklist {
+  grid-area: checklist;
+  background: none;
+  position: relative;
+  background-size: 100% 200%;
+  
+}
+
+.checklist>li:nth-child(n) {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #164d9e;
+  min-width: 0px;
+  /*the property we are going to animate, set to specific value*/
+  float: left;
+  /*prevent display block from filling up all available width*/
+  clear: left;
+  /*prevent float left from putting blocks in-line*/
+  display: block;
+  /*cause width to be interpreted my way*/
+
+}
+
+.checklist>li:nth-child(n + 4) {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ee0b62;
+  min-width: 0px;
+  /*the property we are going to animate, set to specific value*/
+  float: left;
+  /*prevent display block from filling up all available width*/
+  clear: left;
+  /*prevent float left from putting blocks in-line*/
+  display: block;
+  /*cause width to be interpreted my way*/
+
+}
+
+
+
+.checklist>li:hover:nth-child(n) {
+
+  color: #FFF;
+  background-color: #164d9e;
+  min-width: auto;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+.checklist>li:hover:nth-child(n + 4) {
+
+  color: #FFF;
+  background-color: #ee0b62;
+  background-position: 0 -100%;
+  min-width: auto;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+.education {
+  grid-area: education;
+}
+
+.bio,
+.checklist,
+.education {
+  top: 0;
+
+}
