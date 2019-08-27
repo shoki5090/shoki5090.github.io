@@ -6,71 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shoki Ko</title>
     <link rel="favicon" type="image/png" src="./images/favicon.png" />
-    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Archivo|Cairo|Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/lib/hover-min.css" media="all">
+    <script src="https://kit.fontawesome.com/6b84b0c3cc.js"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 
 
-    
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Shoki</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Bucketlist</a>
+                <a class="nav-item nav-link" href="#">Projects</a>
+                <a class="nav-item nav-link" href="#">Education</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row profile">
-            <div class="profile-photo">
-                <img src="./images/profile-photo.png" width="20%" class="img-thumbnail rounded-circle" ></div>
-            <div class="personal-bio">
+            <div class="profile-photo col-lg-5 mx-auto" align="center">
+                <img src="./images/profile-photo.png" width="20%" class="rounded-circle"></div>
+            <div class="personal-bio col-lg-7" align="center">
                 <h2> Hi, I'm SHOKI KO.</h2>
                 <h3>Student <p>Software Engineer Wannabe <p> Machine Learning Hobbyist <p> Rock Climber</h3>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shoki-ko-78ba40165/"> <i
-                        class="fa fa-linkedin-square fa-2x"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shoki-ko-78ba40165/">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
                 <a target="_blank" rel="noopener noreferrer" href="./shoki-ko-201908-resume.docx">
-                    <i class="fa fa-file-pdf-o fa-2x"></i></a>
+                    <i class="fas fa-file-pdf fa-3x"></i></a>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="bio">
-            <h1 style="background-color: #f3eada; display: table; border: grey;">About Me</h1>
-            <p> I'm currently a Boston University junior student learning Computer Science. I'm constantly learning
-                something new.
-                However, it will be too much if I explain everything, so I made a website to summarize my passion and
-                interest.
-            </p>
+        <div class="row introduction">
+            <div class="col-md-3 bio">
+                <h1 style="background-color: #f3eada; display: table; border: grey;">About Me</h1>
+                <p> I'm currently a Boston University junior student learning Computer Science. I'm constantly learning
+                    something new.
+                    However, it will be too much if I explain everything, so I made a website to summarize my passion
+                    and
+                    interest.
+                </p>
 
+            </div>
+
+
+            <div class="col-md-7 checklist">
+                <h1 style="display: table; background-color: #f3eada">Bucketlist (Updated: Summer 2019)</h1>
+                <ul class="checklist fa-ul">
+                    <span class="complete">
+                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>First Internship</li>
+                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Personal Website</li>
+                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>language = {"Mandarin",
+                            "Japanese", "English"}</li>
+
+
+                    </span>
+
+                    <span class="working">
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>language.add("Korean")
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Finish a V6 boulder route
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Finish a 5.11d rock
+                            climbing
+                            route</li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Become Spider-Man</li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Make a personal project
+                            combining computer vision, machine learning, and healthcare</li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Read a book on Finance
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Read a book on
+                            Entrpreneurship
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Get an internship offer
+                            for
+                            Summer 2020</li>
+
+                    </span>
+
+
+                </ul>
+            </div>
         </div>
-
-    </div>
-
-    <div class="container">
-        <div class="checklist">
-            <h1 style="display: table; background-color: #f3eada">Bucketlist (Updated: Summer 2019)</h1>
-            <ul class="checklist">
-                <li>First Internship</li>
-                <li>Personal Website</li>
-                <li>language = {"Mandarin", "Japanese", "English"}</li>
-                <li>language.add("Korean")</li>
-                <li>Finish a V6 boulder route</li>
-                <li>Finish a 5.11d rock climbing route</li>
-                <li>Become Spider-Man</li>
-                <li>Make a personal project combining computer vision, machine learning, and healthcare</li>
-                <li>Read a book on Finance</li>
-                <li>Read a book on Entrpreneurship</li>
-                <li>Get an internship offer for Summer 2020</li>
-            </ul>
-        </div>
-        <div class="project-icon">
-
-        </div>
-
 
     </div>
 
@@ -89,13 +128,9 @@
 
 
 
+
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>

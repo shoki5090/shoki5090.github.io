@@ -7,7 +7,7 @@ body {
 }
 
 .profile-photo {
-  width: 100px;
+  width: auto;
   height: 100px;
   position: relative;
   overflow: hidden;
@@ -15,9 +15,17 @@ body {
 
 .profile-photo img {
   display: inline;
+  border: 2px blue solid;
   margin: 0 auto;
-  margin-left: -25%;
   height: 100%;
   width: auto;
 
+}
+.hvr-bounce-to-right:before{
+  transition-duration: 1s;
+}
+
+
+.working>li.hvr-bounce-to-right:before {
+  background:#f1c40f;
 }
