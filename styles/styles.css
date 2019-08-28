@@ -3,31 +3,66 @@
 }
 
 body {
-  background-color: pink;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,53,180,1) 0%, rgba(198,162,160,1) 100%); 
+  font-family: "Roboto Mono";
+  color:white;
 }
 
+
 .profile{
-  /* background-image:url("../images/dottonbori-background.jpg"); */
-  background-color: azure;
-  overflow: hidden;
-  height: 0;
-  padding-top: 56.25%;
+  background-image:url("../images/dottonbori-background.jpg");
+  height:100%;
+  padding: 15% 10% 10% 10%;
+  /* padding-top: 56.25%; */
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.name {
+  top: calc(60px + 3em);
+  left: auto;
+  bottom: 0;
+  right: auto;
+  text-align: center;
 }
 
 .profile-photo {
   width: auto;
   height: 100px;
-  position: relative;
-  overflow: hidden;
+  top: calc(60px + 5em);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
 }
 
 .profile-photo img {
   display: inline;
-  border: 2px blue solid;
   margin: 0 auto;
   height: 100%;
   width: auto;
 
+}
+
+.personal-bio{
+  top: calc(60px + 100px + 6em);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+
+}
+
+#who-am-i{
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.introduction > li{
+  width:100%;
 }
 .hvr-bounce-to-right:before{
   transition-duration: 1s;
