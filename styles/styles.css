@@ -8,53 +8,32 @@ body {
   font-family: "Roboto Mono";
   color:white;
 }
-
-
-.profile{
-  background-image:url("../images/dottonbori-background.jpg");
-  height:100%;
-  padding: 15% 10% 10% 10%;
-  /* padding-top: 56.25%; */
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+body, html {
+  height: 100%
 }
 
-.name {
-  top: calc(60px + 3em);
-  left: auto;
-  bottom: 0;
-  right: auto;
+.bgimg{
+  min-height: 95%;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgimg{
+  background-image:url(../images/dottonbori-background.jpg);
+}
+
+
+/* .profile{
+} */
+
+.name, .profile-photo, .personal-bio{
   text-align: center;
 }
 
 .profile-photo {
-  width: auto;
-  height: 100px;
-  top: calc(60px + 5em);
-  left: 0;
-  bottom: 0;
-  right: 0;
-  
+  height: 150px;
 }
 
-.profile-photo img {
-  display: inline;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
-
-}
-
-.personal-bio{
-  top: calc(60px + 100px + 6em);
-  left: 0;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-
-}
 
 #who-am-i{
   font-size: 1.5rem;
