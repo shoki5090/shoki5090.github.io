@@ -4,7 +4,6 @@
 
 body {
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,53,180,1) 0%, rgba(198,162,160,1) 100%); 
   font-family: "Roboto Mono";
   color:white;
 }
@@ -12,9 +11,13 @@ body, html {
   height: 100%
 }
 
+h1{
+  font-weight: 800;
+}
+
 .bgimg{
-  min-height: 95%;
-  background-position: center;
+  min-height: 100%;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -26,6 +29,12 @@ body, html {
 /* .profile{
 } */
 
+.page-section{
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
 .name, .profile-photo, .personal-bio{
   text-align: center;
 }
@@ -35,12 +44,29 @@ body, html {
 }
 
 
+#introduction{
+  background-color: #2E3348;
+  color: #B6B6D3;
+  
+}
+
+#introduction > p{
+  text-align: center;
+}
+
+#bio{
+  padding: 5rem 10rem 5rem 10rem;
+  font-size: 1.4em;
+}
+
+
+
 #who-am-i{
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
 
-.introduction > li{
+#introduction > li{
   width:100%;
 }
 .hvr-bounce-to-right:before{

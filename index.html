@@ -27,7 +27,7 @@
 
 <body>
     <!-- Nav bar on the top of the webpage -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Shoki</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,23 +35,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="about-me.html">About Me</a>
+                <a class="nav-item nav-link active" href="#page-top">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#introduction">About Me</a>
                 <a class="nav-item nav-link" href="#">Projects</a>
-                <a class="nav-item nav-link" href="#">Education</a>
+                <a class="nav-item nav-link" href="#education">Education</a>
             </div>
         </div>
     </nav>
-    <div class="container-fluid bgimg d-flex align-items-center justify-content-center">
-        <div class="profile ">
-            <div class="name p-2" >
+
+    <header class="bgimg container-fluid d-flex align-items-center justify-content-center" id="page-top">
+        <div class="page-section " id="profile">
+            <div class="name p-2">
                 <h2> Hi, I'm SHOKI KO.</h2>
             </div>
-            <div class="profile-photo p-2" >
+            <div class="profile-photo p-2">
                 <img src="./images/profile-photo.png" width="20%" class="rounded-circle">
             </div>
             <div class="personal-bio p-2">
-                <h3 id="who-am-i">Student <br>Software Engineer Wannabe <br> Machine Learning Hobbyist <br> Rock Climber
+                <h3 id="who-am-i">Student <br>Software Engineer Wannabe <br> Machine Learning Hobbyist <br> Rock
+                    Climber
                 </h3>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shoki-ko-78ba40165/">
                     <i class="fab fa-linkedin fa-3x p-2"></i>
@@ -64,56 +66,56 @@
             </div>
         </div>
 
-    </div>
+    </header>
 
 
-    <div class="container-fluid">
-        <div class="row introduction">
-            <div class="col-md-3 bio p-0">
-                <h1 style="background-color: rgba(63, 77, 116, 0.76); border: grey;">About Me</h1>
-                <p> I'm currently a Boston University junior student learning Computer Science. I'm constantly learning
-                    something new.
-                    However, it will be too much if I explain everything, so I made a website to summarize my passion
-                    and interest.
-                </p>
-
-            </div>
+    <section class="container-fluid page-section d-flex flex-column align-items-center justify-content-center" id="introduction">
+        <h1 class="p-3" id="about-me">About Me</h1>
+        <p id="bio">
+            I am current a junior at Boston University studying <strong>Computer Science</strong>. I am a curious guy constantly
+            looking for something new to learn.
+            I am currently putting my focus onto <strong>Machine Learning</strong>, <strong>FinTech</strong>, and <strong>Biology</strong>. I
+            recently finished a summer internship at <strong>Panasonic Japan</strong> where I classified over 20,000 outfit
+            images into 4 seasons.
 
 
-            <div class="col-md-7 checklist">
-                <h1 style="background-color: rgba(63, 77, 116, 0.76)">Bucketlist (Updated: Summer 2019)</h1>
-                <ul class="checklist fa-ul">
-                    <span class="complete">
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Summer 2019 Internship</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Personal Website</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>language = {"Mandarin",
-                            "Japanese", "English"}</li>
-                    </span>
 
-                    <span class="working">
-                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>language.add("Korean")
-                        </li>
-                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Finish a V6 boulder route
-                        </li>
-                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Become Spider-Man</li>
-                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Make a personal project
-                            combining computer vision, machine learning, and healthcare</li>
-                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Get an internship offer
-                            for
-                            Summer 2020</li>
-
-                    </span>
+    </section>
 
 
-                </ul>
-            </div>
+    <div class="bucketlist">
+        <div class="checklist">
+            <h1 style="background-color: rgba(63, 77, 116, 0.76)">Bucketlist (Updated: Summer 2019)</h1>
+            <ul class="checklist fa-ul">
+                <span class="complete">
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Summer 2019 Internship</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Personal Website</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>language = {"Mandarin",
+                        "Japanese", "English"}</li>
+                </span>
+
+                <span class="working">
+                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>language.add("Korean")
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Finish a V6 boulder route
+                    </li>
+                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Become Spider-Man</li>
+                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Make a personal project
+                        combining computer vision, machine learning, and healthcare</li>
+                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Get an internship offer
+                        for
+                        Summer 2020</li>
+
+                </span>
+
+
+            </ul>
         </div>
-
     </div>
 
 
-    <div class="education">
-        <h1 class="p-2" tyle="background-color: rgba(63, 77, 116, 0.76); border: grey;">Education</h1>
+    <div id="education">
+        <h1 class="p-2">Education</h1>
         <h2>Computer Science, BA</h2>
         <h3>Boston University, Class of 2021</h3>
         <div class="courses row">
